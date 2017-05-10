@@ -1,6 +1,6 @@
 test:
   build: ../../
-  dockerfile: docker/dev/dockerfile
+  dockerfile: docker/dev/Dockerfile
   volumes_from:
     - cache
   links:
