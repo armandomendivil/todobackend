@@ -21,9 +21,7 @@ builder:
     entrypoint: "entrypoint.sh"
     command: ["pip", "wheel", "--no-index", "-f /build", "."]
 agent:
-  image: vigulant/ansible
-  volumes:
-    - ../../ansible/probe.yml:/ansible/site.yml
+  image: klingan/ansible
   links:
     - db
   environment:

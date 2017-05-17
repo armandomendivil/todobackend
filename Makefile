@@ -1,6 +1,6 @@
 # Project variables
 PROJECT_NAME ?= toddobackend
-ORG_NAME ?= vigulant
+ORG_NAME ?= klingan
 REPO_NAME ?= todobackend
 
 # Flenames

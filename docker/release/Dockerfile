@@ -1,4 +1,4 @@
-FROM vigulant/todobackend-base:latest
+FROM klingan/todobackend-base:latest
 MAINTAINER Jonathan Klingberg <jonathan.klingberg@gmail.com>
 
 COPY target /wheelhouse
