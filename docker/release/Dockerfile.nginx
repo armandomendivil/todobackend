@@ -1,0 +1,4 @@
+FROM nginx
+MAINTAINER Jonathan Klingberg <jonathan.klingberg@gmail.com>
+
+COPY todobackend.conf /etc/nginx/conf.d/todobackend.conf

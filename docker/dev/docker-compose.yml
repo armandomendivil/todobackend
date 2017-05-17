@@ -13,9 +13,7 @@ test:
     TEST_OUTPUT_DIR: /reports
 builder:
     build: ../../
-    dockerfile: docker/dev/dockerfile
-    volumes:
-      - ../../target:/wheelhouse
+    dockerfile: docker/dev/Dockerfile
     volumes_from:
       - cache
     entrypoint: "entrypoint.sh"
@@ -27,6 +25,7 @@ agent:
   environment:
     PROBE_PORT: "3306"
     PROBE_HOST: "db"
+  command: ["probe.yml"]
 db:
   image: mysql:5.6
   hostname: db
