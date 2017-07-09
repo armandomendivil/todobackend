@@ -79,7 +79,7 @@ release:
 
 clean:
 	${INFO} "Destroying development environment..."
-	@ docker-compose -p $(DEV_PROJECT) -f $(DEV_COMPOSE_FILE) down -v
+	#@ docker-compose -p $(DEV_PROJECT) -f $(DEV_COMPOSE_FILE) down -v
 	${INFO} "Destroying release environment..."
 	# @ docker-compose -p $(REL_PROJECT) -f $(REL_COMPOSE_FILE) down -v
 	@ docker images -q -f dangling=true -f label=aplication=$(REPO_NAME) | xargs -I ARGS docker rmi -f ARGS
