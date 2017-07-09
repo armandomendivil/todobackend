@@ -78,7 +78,7 @@ release:
 	${INFO} "Accpetance testing complete..."
 
 clean:
-	${INFO} "Destroying deployment environment..."
+	${INFO} "Destroying deployment environment... V2"
 	@ docker-compose -p $(DEV_PROJECT) -f $(DEV_COMPOSE_FILE) kill
 	@ docker-compose -p $(DEV_PROJECT) -f $(DEV_COMPOSE_FILE) rm -f -v
 	@ docker-compose -p $(REL_PROJECT) -f $(REL_COMPOSE_FILE) kill

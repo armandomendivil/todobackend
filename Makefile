@@ -78,7 +78,7 @@ release:
 	${INFO} "Accpetance testing complete..."
 
 clean:
-	${INFO} "Destroying development environment..."
+	${INFO} "Destroying development environment... V0"
 	#@ docker-compose -p $(DEV_PROJECT) -f $(DEV_COMPOSE_FILE) down -v
 	${INFO} "Destroying release environment..."
 	# @ docker-compose -p $(REL_PROJECT) -f $(REL_COMPOSE_FILE) down -v
